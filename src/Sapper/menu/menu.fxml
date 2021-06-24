@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="border" minHeight="1000.0" minWidth="1500.0" prefHeight="1000.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sapper.menu.Menu">
+   <ImageView fitHeight="935.0" fitWidth="1291.0" layoutX="166.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../resources/island.png" />
+      </image>
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor>
+      <effect>
+         <Lighting>
+            <bumpInput>
+               <Shadow />
+            </bumpInput>
+         </Lighting>
+      </effect>
+   </ImageView>
+   <Button fx:id="startGameBtn" layoutX="145.0" layoutY="430.0" mnemonicParsing="false" onAction="#startGame" prefHeight="215.0" prefWidth="290.0">
+      <font>
+         <Font name="Javanese Text" size="15.0" />
+      </font>
+      <graphic>
+         <ImageView fitHeight="230.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../resources/paperRollLeft.png" />
+            </image>
+            <effect>
+               <Lighting>
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+               </Lighting>
+            </effect>
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button fx:id="showScoresBtn" layoutX="1040.0" layoutY="430.0" mnemonicParsing="false" onAction="#showScores" prefHeight="215.0" prefWidth="290.0">
+      <font>
+         <Font name="Javanese Text" size="15.0" />
+      </font>
+      <graphic>
+         <ImageView fitHeight="230.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../resources/paperRollRight.png" />
+            </image>
+            <effect>
+               <Lighting>
+                  <bumpInput>
+                     <Shadow />
+                  </bumpInput>
+               </Lighting>
+            </effect>
+         </ImageView>
+      </graphic>
+   </Button>
+   <ImageView fitHeight="388.0" fitWidth="388.0" layoutX="547.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../resources/scoreboard.gif" />
+      <effect>
+         <Lighting diffuseConstant="1.28">
+            <bumpInput>
+               <Shadow />
+            </bumpInput>
+         </Lighting>
+      </effect>
+   </ImageView>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
